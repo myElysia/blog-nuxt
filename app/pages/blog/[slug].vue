@@ -1,7 +1,9 @@
 <script setup>
 const slug = useRoute().params.slug
 const { data: post } = await useAsyncData(`blog-${slug}`, () => {
-  return queryCollection('blog').path(`/blog/${slug}`).first()
+  const result = queryCollection('blog').path(`/blog/${slug}`).first();
+  console.log(result);
+  return result;
 })
 </script>
 
