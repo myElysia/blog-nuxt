@@ -1,10 +1,13 @@
-import { defineContentConfig, defineCollection } from '@nuxt/content'
+import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 export default defineContentConfig({
   collections: {
-    content: defineCollection({
+    blog: defineCollection({
       type: 'page',
-      source: 'content/*.md'  //content目录下所有md文件
+      source: 'blog/*.md',
+      schema: z.object({
+        date: z.string()
+      })
     })
   }
 })
