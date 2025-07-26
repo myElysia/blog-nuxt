@@ -1,10 +1,16 @@
 <template>
   <div>
-    <UContainer class="grid min-h-screen grid-rows-[auto_1fr_auto]">
-      <AppHeader />
-      <slot />
-      <AppFooter />
-    </UContainer>
+    <el-container>
+      <el-header>
+        <AppHeader />
+      </el-header>
+      <el-main>
+        <slot />
+      </el-main>
+      <el-footer>
+        <AppFooter />
+      </el-footer>
+    </el-container>
   </div>
 </template>
 

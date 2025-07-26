@@ -1,5 +1,8 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
+  "compilerOptions": {
+    "experimentalDecorators": true  // 开启装饰器这种实验性功能
+  },
   "files": [],
   "references": [
     {

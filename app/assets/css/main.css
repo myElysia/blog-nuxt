@@ -9,3 +9,17 @@
 
   --breakpoint-3xl: 1920px;
 }
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #222;
+  color: white;
+}
+
+a {
+  color: var(--el-color-primary);
+}

@@ -10,17 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "3.6.3",
     "@nuxt/eslint": "^1.2.0",
     "@nuxt/image": "1.10.0",
     "@nuxt/scripts": "0.11.10",
-    "@nuxt/ui": "3.2.0",
-    "better-sqlite3": "^12.2.0",
     "nuxt": "^4.0.0",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
-  },
-  "devDependencies": {
-    "@element-plus/nuxt": "^1.1.4"
   }
 }
